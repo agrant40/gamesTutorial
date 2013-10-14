@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c59c5fe-f137-40f7-9e4b-c62a80280521" name="Default" comment="" />
+    <list default="true" id="5c59c5fe-f137-40f7-9e4b-c62a80280521" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rtype/Board.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rtype/Craft.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rtype/Missile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/rtype/RType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="gamesTutorial.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Board.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381776147956" ignored="false" />
+    <file path="/Board.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381781102689" ignored="false" />
     <file path="/Skeleton.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381759536255" ignored="false" />
     <file path="/File Header.txt.ft" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381759681577" ignored="false" />
     <file path="/Donut.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381760703673" ignored="false" />
     <file path="/Image.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381761238859" ignored="false" />
     <file path="/Star.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381776420621" ignored="false" />
     <file path="/fragment.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381776348828" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381778684144" ignored="false" />
+    <file path="/Craft.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381780868328" ignored="false" />
+    <file path="/RType.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381780151617" ignored="false" />
+    <file path="/Missile.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381780626135" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +36,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -62,6 +72,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -76,6 +87,15 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -92,6 +112,10 @@
         <option value="$PROJECT_DIR$/src/star2/Star.java" />
         <option value="$PROJECT_DIR$/src/star3/Board.java" />
         <option value="$PROJECT_DIR$/src/star3/Star.java" />
+        <option value="$PROJECT_DIR$/src/rtype/RType.java" />
+        <option value="$PROJECT_DIR$/src/rtype/Missile.java" />
+        <option value="$PROJECT_DIR$/src/rtype/Craft.java" />
+        <option value="$PROJECT_DIR$/src/rtype/Board.java" />
       </list>
     </option>
   </component>
@@ -102,7 +126,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -111,7 +135,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -163,26 +187,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamesTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rtype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="67" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="68" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="71" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileTemplates" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/cmd/git.exe" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="67" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="707" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="704" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="67" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="61" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -193,7 +252,7 @@
       <PyConsoleSettings />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Star3">
+  <component name="RunManager" selected="Application.RType">
     <configuration default="false" name="Skeleton" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -288,6 +347,28 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="RType" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="rtype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="rtype.RType" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="gamesTutorial" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -300,19 +381,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -341,6 +409,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -413,20 +494,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.Star3" />
       <item index="1" class="java.lang.String" itemvalue="Application.Star2" />
       <item index="2" class="java.lang.String" itemvalue="Application.Skeleton" />
       <item index="3" class="java.lang.String" itemvalue="Application.Donut" />
       <item index="4" class="java.lang.String" itemvalue="Application.Image" />
       <item index="5" class="java.lang.String" itemvalue="Application.Star" />
+      <item index="6" class="java.lang.String" itemvalue="Application.RType" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Star" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Image" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Donut" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Skeleton" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.RType" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Star" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Image" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Donut" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Skeleton" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -476,10 +559,10 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21245828" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -487,8 +570,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1189968" sideWeight="0.7875417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21245828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1189968" sideWeight="0.7875417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21245828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -561,41 +644,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_21/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="924" column="77" selection-start="35060" selection-end="35060" vertical-scroll-proportion="5.9164224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/donut/Donut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="464" selection-end="464" vertical-scroll-proportion="0.5982405">
-          <folding />
-        </state>
+        <state line="24" column="20" selection-start="464" selection-end="464" vertical-scroll-proportion="0.5982405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/donut/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="89" selection-start="439" selection-end="439" vertical-scroll-proportion="0.2771261">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="19" column="89" selection-start="439" selection-end="439" vertical-scroll-proportion="0.2771261" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/skeleton/Skeleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="426" selection-end="426" vertical-scroll-proportion="0.44868034">
-          <folding />
-        </state>
+        <state line="18" column="26" selection-start="426" selection-end="426" vertical-scroll-proportion="0.44868034" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/skeleton/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="103" selection-end="103" vertical-scroll-proportion="0.14956012">
-          <folding />
-        </state>
+        <state line="6" column="8" selection-start="103" selection-end="103" vertical-scroll-proportion="0.14956012" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bardejov/Board.java">
@@ -609,9 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bardejov/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="203" selection-end="203" vertical-scroll-proportion="0.3489736">
-          <folding />
-        </state>
+        <state line="14" column="8" selection-start="203" selection-end="203" vertical-scroll-proportion="0.3489736" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/star/Board.java">
@@ -625,16 +689,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/star/Star.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="486" selection-end="486" vertical-scroll-proportion="0.5982405">
-          <folding />
-        </state>
+        <state line="24" column="19" selection-start="486" selection-end="486" vertical-scroll-proportion="0.5982405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/star2/Star.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="23" selection-start="359" selection-end="359" vertical-scroll-proportion="0.47360703">
-          <folding />
-        </state>
+        <state line="19" column="23" selection-start="359" selection-end="359" vertical-scroll-proportion="0.47360703" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/star2/Board.java">
@@ -657,8 +717,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/star3/Star.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="52" selection-start="423" selection-end="423" vertical-scroll-proportion="0.5483871">
+        <state line="22" column="52" selection-start="423" selection-end="423" vertical-scroll-proportion="0.5483871" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rtype/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="28" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rtype/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="8" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rtype/RType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rtype/Craft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="68" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.42375368">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
