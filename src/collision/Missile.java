@@ -1,20 +1,14 @@
 package collision;
 
 import java.awt.Image;
+
 import java.awt.Rectangle;
 
 import javax.swing.ImageIcon;
 
-/**
- * Created with IntelliJ IDEA.
- * User: AdamG
- * Date: 10/16/13
- * Time: 10:26 AM
- */
 public class Missile {
-    public String missilePath = "/Images/missile.png";
 
-    private int x,y;
+    private int x, y;
     private Image image;
     boolean visible;
     private int width, height;
@@ -22,8 +16,10 @@ public class Missile {
     private final int BOARD_WIDTH = 390;
     private final int MISSILE_SPEED = 2;
 
-    public Missile(int x, int y){
-        ImageIcon ii = new ImageIcon(this.getClass().getResource(missilePath));
+    public Missile(int x, int y) {
+
+        ImageIcon ii =
+                new ImageIcon(this.getClass().getResource("/images/missile.png"));
         image = ii.getImage();
         visible = true;
         width = image.getWidth(null);
@@ -32,33 +28,34 @@ public class Missile {
         this.y = y;
     }
 
-    public Image getImage(){
+
+    public Image getImage() {
         return image;
     }
 
-    public int getX(){
+    public int getX() {
         return x;
     }
 
-    public int getY(){
+    public int getY() {
         return y;
     }
 
-    public boolean isVisible(){
+    public boolean isVisible() {
         return visible;
     }
 
-    public void setVisible(Boolean visible){
+    public void setVisible(Boolean visible) {
         this.visible = visible;
     }
 
-    public Rectangle getBounds(){
-        return new Rectangle(x,y,width,height);
+    public Rectangle getBounds() {
+        return new Rectangle(x, y, width, height);
     }
 
-    public void move(){
+    public void move() {
         x += MISSILE_SPEED;
-        if(x > BOARD_WIDTH)
+        if (x > BOARD_WIDTH)
             visible = false;
     }
 }

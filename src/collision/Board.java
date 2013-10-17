@@ -18,12 +18,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-/**
- * Created with IntelliJ IDEA.
- * User: AdamG
- * Date: 10/16/13
- * Time: 9:46 AM
- */
+
 public class Board extends JPanel implements ActionListener {
 
     private Timer timer;
@@ -33,8 +28,8 @@ public class Board extends JPanel implements ActionListener {
     private int B_WIDTH;
     private int B_HEIGHT;
 
-    private int [][] pos = {
-            {2380,29},{2500,59},{1380,89},
+    private int[][] pos = {
+            {2380, 29}, {2500, 59}, {1380, 89},
             {780, 109}, {580, 139}, {680, 239},
             {790, 259}, {760, 50}, {790, 150},
             {980, 209}, {560, 45}, {510, 70},
@@ -45,7 +40,7 @@ public class Board extends JPanel implements ActionListener {
             {820, 128}, {490, 170}, {700, 30}
     };
 
-    public Board(){
+    public Board() {
 
         addKeyListener(new TAdapter());
         setFocusable(true);
@@ -53,7 +48,7 @@ public class Board extends JPanel implements ActionListener {
         setDoubleBuffered(true);
         ingame = true;
 
-        setSize(400,300);
+        setSize(400, 300);
 
         craft = new Craft();
 
@@ -63,77 +58,83 @@ public class Board extends JPanel implements ActionListener {
         timer.start();
     }
 
-    public void addNotify(){
+    public void addNotify() {
         super.addNotify();
         B_WIDTH = getWidth();
         B_HEIGHT = getHeight();
     }
 
-    public void initAliens(){
+    public void initAliens() {
         aliens = new ArrayList();
 
-        for(int i=0; i<pos.length; i++){
-            aliens.add(new Alien(pos[i][0],pos[i][1]));
+        for (int i=0; i<pos.length; i++ ) {
+            aliens.add(new Alien(pos[i][0], pos[i][1]));
         }
     }
 
-    public void paint(Graphics g){
+
+    public void paint(Graphics g) {
         super.paint(g);
 
-        if(ingame){
+        if (ingame) {
 
             Graphics2D g2d = (Graphics2D)g;
 
-            if(craft.isVisible())
-                g2d.drawImage(craft.getImage(), craft.getX(),craft.getY(), this);
+            if (craft.isVisible())
+                g2d.drawImage(craft.getImage(), craft.getX(), craft.getY(),
+                        this);
 
             ArrayList ms = craft.getMissiles();
 
-            for(int i=0; i<ms.size(); i++){
+            for (int i = 0; i < ms.size(); i++) {
                 Missile m = (Missile)ms.get(i);
-                g2d.drawImage(m.getImage(),m.getX(),m.getY(), this);
+                g2d.drawImage(m.getImage(), m.getX(), m.getY(), this);
             }
 
-            for(int i=0; i<aliens.size(); i++){
+            for (int i = 0; i < aliens.size(); i++) {
                 Alien a = (Alien)aliens.get(i);
-                if(a.isVisible())
+                if (a.isVisible())
                     g2d.drawImage(a.getImage(), a.getX(), a.getY(), this);
             }
 
             g2d.setColor(Color.WHITE);
             g2d.drawString("Aliens left: " + aliens.size(), 5, 15);
 
+
         } else {
             String msg = "Game Over";
             Font small = new Font("Helvetica", Font.BOLD, 14);
             FontMetrics metr = this.getFontMetrics(small);
 
-            g.setColor(Color.WHITE);
+            g.setColor(Color.white);
             g.setFont(small);
-            g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2, B_HEIGHT /2);
+            g.drawString(msg, (B_WIDTH - metr.stringWidth(msg)) / 2,
+                    B_HEIGHT / 2);
         }
 
         Toolkit.getDefaultToolkit().sync();
         g.dispose();
     }
 
-    public void actionPerformed(ActionEvent e){
-        if(aliens.size() == 0){
+
+    public void actionPerformed(ActionEvent e) {
+
+        if (aliens.size()==0) {
             ingame = false;
         }
 
         ArrayList ms = craft.getMissiles();
 
-        for(int i = 0; i < ms.size(); i++){
-            Missile m = (Missile)ms.get(i);
-            if(m.isVisible())
+        for (int i = 0; i < ms.size(); i++) {
+            Missile m = (Missile) ms.get(i);
+            if (m.isVisible())
                 m.move();
             else ms.remove(i);
         }
 
-        for(int i = 0; i < aliens.size(); i++){
+        for (int i = 0; i < aliens.size(); i++) {
             Alien a = (Alien) aliens.get(i);
-            if(a.isVisible())
+            if (a.isVisible())
                 a.move();
             else aliens.remove(i);
         }
@@ -143,14 +144,15 @@ public class Board extends JPanel implements ActionListener {
         repaint();
     }
 
-    public void checkCollisions(){
+    public void checkCollisions() {
+
         Rectangle r3 = craft.getBounds();
 
-        for(int j = 0; j < aliens.size(); j++){
+        for (int j = 0; j<aliens.size(); j++) {
             Alien a = (Alien) aliens.get(j);
             Rectangle r2 = a.getBounds();
 
-            if(r3.intersects(r2)){
+            if (r3.intersects(r2)) {
                 craft.setVisible(false);
                 a.setVisible(false);
                 ingame = false;
@@ -159,16 +161,16 @@ public class Board extends JPanel implements ActionListener {
 
         ArrayList ms = craft.getMissiles();
 
-        for(int i = 0; i<ms.size();i++){
+        for (int i = 0; i < ms.size(); i++) {
             Missile m = (Missile) ms.get(i);
 
             Rectangle r1 = m.getBounds();
 
-            for(int j = 0; j<aliens.size();j++){
+            for (int j = 0; j<aliens.size(); j++) {
                 Alien a = (Alien) aliens.get(j);
                 Rectangle r2 = a.getBounds();
 
-                if(r1.intersects(r2)){
+                if (r1.intersects(r2)) {
                     m.setVisible(false);
                     a.setVisible(false);
                 }
@@ -176,12 +178,14 @@ public class Board extends JPanel implements ActionListener {
         }
     }
 
-    private class TAdapter extends KeyAdapter{
-        public void keyReleased(KeyEvent e){
+
+    private class TAdapter extends KeyAdapter {
+
+        public void keyReleased(KeyEvent e) {
             craft.keyReleased(e);
         }
 
-        public void keyPressed(KeyEvent e){
+        public void keyPressed(KeyEvent e) {
             craft.keyPressed(e);
         }
     }

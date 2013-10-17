@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c59c5fe-f137-40f7-9e4b-c62a80280521" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collision/Alien.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collision/Board.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collision/Collision.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collision/Craft.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collision/Missile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collision/Alien.java" afterPath="$PROJECT_DIR$/src/collision/Alien.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collision/Board.java" afterPath="$PROJECT_DIR$/src/collision/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collision/Collision.java" afterPath="$PROJECT_DIR$/src/collision/Collision.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collision/Craft.java" afterPath="$PROJECT_DIR$/src/collision/Craft.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collision/Missile.java" afterPath="$PROJECT_DIR$/src/collision/Missile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rtype/Missile.java" afterPath="$PROJECT_DIR$/src/rtype/Missile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gamesTutorial.iws" />
@@ -18,10 +19,10 @@
     <file path="/Image.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381761238859" ignored="false" />
     <file path="/Star.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381776420621" ignored="false" />
     <file path="/fragment.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381776348828" ignored="false" />
-    <file path="/Dummy.txt" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381934126189" ignored="false" />
+    <file path="/Dummy.txt" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1382039236828" ignored="false" />
     <file path="/Craft.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381936200486" ignored="false" />
     <file path="/RType.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381780151617" ignored="false" />
-    <file path="/Missile.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381937688926" ignored="false" />
+    <file path="/Missile.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1382039281085" ignored="false" />
     <file path="/Alien.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381937095516" ignored="false" />
     <file path="/Missiles.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381937087429" ignored="false" />
     <file path="/Collision.java" changelist="5c59c5fe-f137-40f7-9e4b-c62a80280521" time="1381937049161" ignored="false" />
@@ -39,6 +40,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -75,24 +78,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/collision/Craft.java" line="89" class="collision.Craft" package="collision">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,18 +90,7 @@
       <file leaf-file-name="Craft.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collision/Craft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Missile.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rtype/Missile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="38" selection-start="709" selection-end="709" vertical-scroll-proportion="0.53079176">
+            <state line="12" column="36" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,10 +101,8 @@
       <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collision/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="85" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="191" column="1" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,21 +110,8 @@
       <file leaf-file-name="Alien.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collision/Alien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Missile.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/collision/Missile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="40" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="10" column="36" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,8 +119,19 @@
       <file leaf-file-name="Collision.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collision/Collision.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="65" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+            <state line="7" column="55" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Missile.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/collision/Missile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="67" selection-start="436" selection-end="436" vertical-scroll-proportion="0.6241259">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,13 +162,13 @@
         <option value="$PROJECT_DIR$/src/star3/Board.java" />
         <option value="$PROJECT_DIR$/src/star3/Star.java" />
         <option value="$PROJECT_DIR$/src/rtype/RType.java" />
-        <option value="$PROJECT_DIR$/src/rtype/Missile.java" />
         <option value="$PROJECT_DIR$/src/rtype/Craft.java" />
         <option value="$PROJECT_DIR$/src/rtype/Board.java" />
-        <option value="$PROJECT_DIR$/src/collision/Craft.java" />
-        <option value="$PROJECT_DIR$/src/collision/Collision.java" />
         <option value="$PROJECT_DIR$/src/collision/Missiles.java" />
         <option value="$PROJECT_DIR$/src/collision/Board.java" />
+        <option value="$PROJECT_DIR$/src/collision/Collision.java" />
+        <option value="$PROJECT_DIR$/src/rtype/Missile.java" />
+        <option value="$PROJECT_DIR$/src/collision/Craft.java" />
         <option value="$PROJECT_DIR$/src/collision/Alien.java" />
         <option value="$PROJECT_DIR$/src/collision/Missile.java" />
       </list>
@@ -240,7 +210,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,6 +262,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -653,25 +623,25 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33407572" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21245828" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33407572" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1189968" sideWeight="0.7875417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21245828" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10032017" sideWeight="0.66592425" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20712695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -741,6 +711,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/collision/Collision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="65" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/star/Star.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="19" selection-start="486" selection-end="486" vertical-scroll-proportion="0.5982405" />
@@ -777,25 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rtype/RType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rtype/Craft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="68" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.42375368">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_21/src.zip!/java/awt/EventDispatchThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2194" selection-end="2194" vertical-scroll-proportion="0.3328446">
-          <folding />
-        </state>
+        <state line="14" column="49" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/missile.png">
@@ -803,43 +762,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/collision/Collision.java">
+    <entry file="file://$PROJECT_DIR$/src/rtype/Craft.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="65" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collision/Missile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="40" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collision/Alien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collision/Craft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collision/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="85" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0">
+        <state line="88" column="77" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.590106">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -848,7 +773,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rtype/Missile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="38" selection-start="709" selection-end="709" vertical-scroll-proportion="0.53079176">
+        <state line="2" column="31" selection-start="38" selection-end="38" vertical-scroll-proportion="0.06007067">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collision/Craft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collision/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="1" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collision/Alien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collision/Collision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="55" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collision/Missile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="67" selection-start="436" selection-end="436" vertical-scroll-proportion="0.6241259">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -2,14 +2,9 @@ package collision;
 
 import javax.swing.JFrame;
 
-/**
- * Created with IntelliJ IDEA.
- * User: AdamG
- * Date: 10/16/13
- * Time: 10:22 AM
- */
 public class Collision extends JFrame {
-    public Collision(){
+
+    public Collision() {
         add(new Board());
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

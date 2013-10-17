@@ -5,15 +5,10 @@ import java.awt.Rectangle;
 
 import javax.swing.ImageIcon;
 
-/**
- * Created with IntelliJ IDEA.
- * User: AdamG
- * Date: 10/16/13
- * Time: 10:11 AM
- */
+
 public class Alien {
 
-    private String craft = "/Images/alien.png";
+    private String craft = "/images/alien.png";
 
     private int x;
     private int y;
@@ -22,7 +17,7 @@ public class Alien {
     private boolean visible;
     private Image image;
 
-    public Alien(int x, int y){
+    public Alien(int x, int y) {
         ImageIcon ii = new ImageIcon(this.getClass().getResource(craft));
         image = ii.getImage();
         width = image.getWidth(null);
@@ -32,33 +27,34 @@ public class Alien {
         this.y = y;
     }
 
-    public void move(){
-        if(x < 0)
+
+    public void move() {
+        if (x < 0)
             x = 400;
         x -= 1;
     }
 
-    public int getX(){
+    public int getX() {
         return x;
     }
 
-    public int getY(){
+    public int getY() {
         return y;
     }
 
-    public boolean isVisible(){
+    public boolean isVisible() {
         return visible;
     }
 
-    public void setVisible(Boolean visible){
+    public void setVisible(Boolean visible) {
         this.visible = visible;
     }
 
-    public Image getImage(){
+    public Image getImage() {
         return image;
     }
 
-    public Rectangle getBounds(){
-        return new Rectangle(x,y,width,height);
+    public Rectangle getBounds() {
+        return new Rectangle(x, y, width, height);
     }
 }
